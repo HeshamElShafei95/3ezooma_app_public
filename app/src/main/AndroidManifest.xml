@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ezooma.caterer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".controllers.ui.activities.homeScreens.ChatActivity"></activity>
+        <activity android:name=".controllers.ui.activities.homeScreens.ReviewsAndRatingActivity" />
+        <activity android:name=".controllers.ui.activities.settings.settingScreen.AboutUsActivity" />
+        <activity android:name=".controllers.ui.activities.settings.settingScreen.TermsAndConditionsActivity" />
+        <activity android:name=".controllers.ui.activities.settings.settingScreen.PrivacyPolicyActivity" />
+        <activity android:name=".controllers.ui.activities.settings.settingScreen.BusinessSettingsActivity" />
+        <activity android:name=".controllers.ui.activities.homeScreens.AddedItemsActivity" />
+        <activity android:name=".controllers.ui.activities.homeScreens.AddItemsActivity" />
+        <activity android:name=".controllers.ui.activities.homeScreens.MenuActivity" />
+        <activity android:name=".controllers.ui.activities.settings.settingScreen.NotificationActivity" />
+        <activity android:name=".controllers.ui.activities.homeScreens.PastOrdersDetailActivity" />
+        <activity android:name=".controllers.ui.activities.homeScreens.OnGoingOrderDetailsActivity" />
+        <activity android:name=".controllers.ui.activities.homeScreens.NewOrderDetailsActivity" />
+        <activity android:name=".controllers.ui.activities.settings.settingScreen.SettingsActivity" />
+        <activity
+            android:name=".controllers.ui.activities.homeScreens.HomeScreenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".controllers.ui.activities.loginSignupPackage.ChooseLocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".controllers.ui.activities.loginSignupPackage.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".controllers.ui.activities.loginSignupPackage.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".controllers.ui.activities.loginSignupPackage.ChooseLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".controllers.ui.activities.loginSignupPackage.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".controllers.ui.activities.loginSignupPackage.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".controllers.ui.activities.loginSignupPackage.SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

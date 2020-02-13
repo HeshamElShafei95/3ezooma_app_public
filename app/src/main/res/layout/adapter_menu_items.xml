@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlFoodMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMenuFood"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="@dimen/dimen_0dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgMenuFood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/food_one" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMenuFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_toStartOf="@+id/cvMenuFood"
+            android:fontFamily="@font/cairo_bold"
+            android:includeFontPadding="false"
+            android:text="Main Course"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18sp"
+            app:fontFamily="@font/cairo_bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlParentCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMenuFoodName"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_toStartOf="@+id/cvMenuFood">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/orange_curved_background"
+                android:paddingStart="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_3dp"
+                android:paddingEnd="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_3dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtFoodType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:includeFontPadding="false"
+                    android:text="Food"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+                    app:fontFamily="@font/roboto_regular" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlParentCategory"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_toStartOf="@+id/cvMenuFood">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEdit"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="@drawable/blue_border_background"
+                android:fontFamily="@font/roboto_bold"
+                android:includeFontPadding="false"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@color/edit_blue"
+                android:textSize="@dimen/text_14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_toEndOf="@+id/btnEdit"
+                android:background="@drawable/red_border_background"
+                android:fontFamily="@font/roboto_bold"
+                android:includeFontPadding="false"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_red"
+                android:textSize="@dimen/text_14sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rlFoodMenu"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:background="@color/view_color" />
+</RelativeLayout>

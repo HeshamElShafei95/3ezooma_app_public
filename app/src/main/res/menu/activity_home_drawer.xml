@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--tools:showIn="navigation_view"-->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="@string/orders" />
+
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@drawable/menu_item"
+        android:title="@string/menu" />
+
+    <item
+        android:id="@+id/nav_schedule"
+        android:icon="@drawable/scedule"
+        android:title="@string/schedule" />
+
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/nav_reviews"
+        android:icon="@drawable/ic_review"
+        android:title="@string/review_and_ratings" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settingd"
+        android:title="@string/settings" />
+
+
+
+
+</menu>

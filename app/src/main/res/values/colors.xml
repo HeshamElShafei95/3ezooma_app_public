@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F86C03</color>
+    <color name="colorPrimaryDark">#F86C03</color>
+    <color name="colorAccent">#F86C03</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="description">#C9C7C7</color>
+    <color name="trans_black">#90000000</color>
+    <color name="white_greyish">#a0a0a0</color>
+    <color name="fb_color">#3b5998</color>
+    <color name="transparent">#00000000</color>
+    <color name="lighter_gray">#FF909090</color>
+    <color name="dark_gray">#696969</color>
+    <color name="very_lighter_gray">#DDD</color>
+    <color name="review_gray">#FAFAFE</color>
+    <color name="screen_background">#E7E7E7</color>
+    <color name="btn_red">#DB4743</color>
+    <color name="light_orange">#FAB511</color>
+    <color name="medium_orange">#F98F09</color>
+    <color name="dark_orange">#F86C03</color>
+    <color name="green">#35B31C</color>
+    <color name="opaque_green">#FAE6CB</color>
+    <color name="gray_clr">#BABABA</color>
+    <color name="lightGray">#D4D4D4</color>
+    <color name="view_color">#EDEDED</color>
+    <color name="opaque_orange">#FFF8e1</color>
+    <color name="edit_blue">#1d75bb</color>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".controllers.ui.activities.homeScreens.AddItemsActivity">
+   <include layout="@layout/app_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlCategoryImage"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_marginRight="50dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/screen_background" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/camera_pic" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/labelUploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlCategoryImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/black"
+                android:text="Upload Image"
+                app:fontFamily="@font/roboto_bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/labelUploadImage"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCategoryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:hint="Enter item name"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSelectItemCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cvCategoryName"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="4dp">
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+
+                    android:entries="@array/category_array_name"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvItemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cvSelectItemCategory"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtItemPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:hint="Item price"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvItemDescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cvItemPrice"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtItemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:hint="Write item description"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSaveCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cvItemDescription"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginRight="25dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/green"
+                app:cardCornerRadius="4dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/cairo_bold" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
