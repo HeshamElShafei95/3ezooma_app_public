@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".controllers.ui.activities.settings.settingScreen.SettingsActivity">
+
+
+    <include layout="@layout/app_toolbar" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgAvailability"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    app:srcCompat="@drawable/clock" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_toStartOf="@+id/switchAvailable"
+                    android:layout_toEndOf="@+id/imgAvailability"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Availability (ONLINE)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_regular" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="false"
+
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_arrow_forward_ios_a" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlAvailability"
+                android:background="@color/lightGray" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlBusinessSettings"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/rlAvailability"
+                android:layout_height="70dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgBusinessSettings"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+
+                    app:srcCompat="@drawable/ic_setting_red" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_toStartOf="@+id/imgArrow9"
+                    android:layout_toLeftOf="@+id/imgArrow9"
+                    android:layout_toEndOf="@+id/imgBusinessSettings"
+                    android:layout_toRightOf="@+id/imgBusinessSettings"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Business Settings"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_regular" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgArrow9"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_arrow_forward_ios_a" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlBusinessSettings"
+                android:background="@color/lightGray" />
+
+            <RelativeLayout
+                android:id="@+id/rlContactsSettings"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/rlBusinessSettings">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgLocationSetting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    app:srcCompat="@drawable/ic_event" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_toStartOf="@+id/imgArrow1"
+                    android:layout_toEndOf="@+id/imgLocationSetting"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Contact us"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_regular" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgArrow1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlContactsSettings"
+                android:background="@color/lightGray" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/rlContactsSettings">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPrivacyPolicy"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    app:srcCompat="@drawable/ic_privacy_policy" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_toStartOf="@+id/imgArrow2"
+                    android:layout_toLeftOf="@+id/imgArrow2"
+                    android:layout_toEndOf="@+id/imgPrivacyPolicy"
+                    android:layout_toRightOf="@+id/imgPrivacyPolicy"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/privacy_policy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_regular" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgArrow2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_arrow_forward_ios_a" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlPrivacyPolicy"
+                android:background="@color/lightGray" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlTermsAndConditions"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/rlPrivacyPolicy">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgTermsAndConditions"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    app:srcCompat="@drawable/ic_terms_condition" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_toStartOf="@+id/imgArrow3"
+                    android:layout_toLeftOf="@+id/imgArrow3"
+                    android:layout_toEndOf="@+id/imgTermsAndConditions"
+                    android:layout_toRightOf="@+id/imgTermsAndConditions"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/terms_and_conditions"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_regular" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgArrow3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_arrow_forward_ios_a" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlTermsAndConditions"
+                android:background="@color/lightGray" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/rlTermsAndConditions">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgAboutUs"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    app:srcCompat="@drawable/ic_about_us" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_toStartOf="@+id/imgArrow4"
+                    android:layout_toLeftOf="@+id/imgArrow4"
+                    android:layout_toEndOf="@+id/imgAboutUs"
+                    android:layout_toRightOf="@+id/imgAboutUs"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/about_us"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_regular" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgArrow4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_arrow_forward_ios_a" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlAboutUs"
+                android:background="@color/lightGray" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/rlAboutUs">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgChangePassword"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    app:srcCompat="@drawable/ic_change_password" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_toStartOf="@+id/imgArrow5"
+                    android:layout_toLeftOf="@+id/imgArrow5"
+                    android:layout_toEndOf="@+id/imgChangePassword"
+                    android:layout_toRightOf="@+id/imgChangePassword"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/change_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_regular" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgArrow5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_arrow_forward_ios_a" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlChangePassword"
+                android:background="@color/lightGray" />
+
+            <RelativeLayout
+                android:id="@+id/rlLogout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/rlChangePassword"
+                android:layout_marginBottom="@dimen/dimen_15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgLogout"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    app:srcCompat="@drawable/ic_logout" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_toEndOf="@+id/imgLogout"
+                    android:layout_toRightOf="@+id/imgLogout"
+                    android:text="@string/logout"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

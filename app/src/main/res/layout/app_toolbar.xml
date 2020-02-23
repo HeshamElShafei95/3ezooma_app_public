@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/ToolbarTheme"
+    app:contentInsetStart="@dimen/dimen_0dp"
+    app:layout_scrollFlags="scroll|enterAlways|snap"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:titleTextColor="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgToolbarBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="@dimen/dimen_5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        app:srcCompat="@drawable/back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_20"
+        android:fontFamily="@font/cairo_bold"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:fontFamily="@font/cairo_bold" />
+</androidx.appcompat.widget.Toolbar>

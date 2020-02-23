@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Commons</string>
+    <string name="no_record_found">No record found</string>
+    <string name="custom_font">Roboto</string>
+    <string name="cancel">Cancel</string>
+    <string name="gallery">Gallery</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="choose_picture">Choose Picture</string>
+    <string name="proceed">Proceed</string>
+    <string name="pls_accept_terms_conditions">Please accept Terms And Condition</string>
+    <string name="error_common">Common Error!</string>
+    <string name="error_invalid_response">Invalid Response</string>
+    <string name="error_internet_connection">No Internet Connection!</string>
+
+</resources>

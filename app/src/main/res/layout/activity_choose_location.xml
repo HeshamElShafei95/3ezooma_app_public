@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".controllers.ui.activities.loginSignupPackage.ChooseLocationActivity">
+
+    <include layout="@layout/app_toolbar" />
+
+    <View
+        android:id="@+id/toolBarView"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolBarView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/text_20"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:background="@drawable/search_grey" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_toEndOf="@+id/imgSearch"
+                android:background="@null"
+                android:hint="Search for your location"
+                android:textSize="@dimen/text_14sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rlUserLocation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_below="@+id/cvLocation"
+        android:layout_marginTop="@dimen/text_20">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgl"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:background="@drawable/ic_my_location_orange" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/text_14sp"
+            android:layout_marginRight="@dimen/text_14sp"
+            android:layout_toEndOf="@+id/imgl"
+            android:fontFamily="@font/cairo_bold"
+            android:includeFontPadding="false"
+            android:text="Use current location"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16sp"
+            app:fontFamily="@font/cairo_bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_below="@+id/rlUserLocation"
+        android:layout_marginTop="@dimen/dimen_10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img2"
+            android:layout_width="@dimen/text_18sp"
+            android:layout_height="@dimen/text_18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/text_16sp"
+            android:background="@drawable/more" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_16sp"
+            android:layout_marginRight="@dimen/text_16sp"
+            android:layout_toEndOf="@+id/img2"
+            android:fontFamily="@font/cairo_bold"
+            android:includeFontPadding="false"
+            android:text="Add Address"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16sp"
+            app:fontFamily="@font/cairo_bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
