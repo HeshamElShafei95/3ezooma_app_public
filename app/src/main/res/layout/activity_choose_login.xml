@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -174,4 +175,182 @@
             android:layout_marginTop="@dimen/text_30"
             app:srcCompat="@drawable/logo_name_white" />
     </RelativeLayout>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.ui.activities.loginSignupPackage.ChooseLoginActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAlreadyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/cairo_bold"
+        android:text="@string/txt_already_have_an_account_log_in"
+        android:textSize="16sp"
+        app:fontFamily="@font/cairo_bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@+id/cvSignUpEmail"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="@dimen/text_20"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/cvSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/ic_email_white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/login_with_email"
+                android:includeFontPadding="false"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:fontFamily="@font/cairo_bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnSignUpFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@+id/cvSignUpEmail"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="@dimen/text_20"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/fb_color"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/cvFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/facebook_home_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/login_with_facebook"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:fontFamily="@font/cairo_bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSignUpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@+id/txtAlreadyAccount"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="@dimen/text_30"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/ic_email_white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/sign_up_using_email"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp"
+                app:fontFamily="@font/cairo_bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/btnSignIn"
+        android:layout_marginBottom="@dimen/text_30"
+        android:background="@drawable/splash_gradient">
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/v1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/ic_logo_white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtArabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEnglish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/text_20"
+            android:text=""
+            android:textSize="@dimen/text_16sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/txtEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/v1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/text_30"
+            app:srcCompat="@drawable/logo_name_white" />
+    </RelativeLayout>
+>>>>>>> d56c8e2f0b4ca020f46703d2dea49ad510a7f45a
 </RelativeLayout>

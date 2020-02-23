@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -64,3 +65,70 @@
             app:fontFamily="@font/cairo_bold" />
     </RelativeLayout>
 </RelativeLayout>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:titleTextColor="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgToolbarBack"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        app:srcCompat="@drawable/back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtToolbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/text_20"
+        android:layout_toStartOf="@+id/rlAddItems"
+        android:layout_toEndOf="@+id/imgToolbarBack"
+        android:fontFamily="@font/cairo_bold"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:fontFamily="@font/cairo_bold" />
+
+    <RelativeLayout
+        android:id="@+id/rlAddItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_5dp"
+        android:padding="@dimen/dimen_3dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgAddItem"
+            android:layout_width="25dp"
+            android:layout_height="@dimen/dimen_25dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_add_item" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_3dp"
+            android:layout_toEndOf="@+id/imgAddItem"
+            android:fontFamily="@font/cairo_bold"
+            android:includeFontPadding="false"
+            android:text="Add Items"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14sp"
+            app:fontFamily="@font/cairo_bold" />
+    </RelativeLayout>
+</RelativeLayout>
+>>>>>>> d56c8e2f0b4ca020f46703d2dea49ad510a7f45a

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -505,4 +506,513 @@
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".controllers.ui.activities.homeScreens.PastOrdersDetailActivity">
+    <include layout="@layout/app_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlAboutUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/opaque_orange"
+                android:padding="@dimen/dimen_5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUserImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/profile_back" />
+
+                <RelativeLayout
+                    android:id="@+id/rlUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_toEndOf="@+id/imgUserImage">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/cairo_bold"
+                        android:includeFontPadding="false"
+                        android:text="Ahmed Ashraf"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        app:fontFamily="@font/cairo_bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtOrderNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dimen_5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:includeFontPadding="false"
+                        android:text="Order id: 348"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        app:fontFamily="@font/roboto_regular" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlUserName"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_toEndOf="@+id/imgUserImage">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtOrderDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="@dimen/dimen_5dp"
+                        android:layout_toStartOf="@+id/imgChat"
+                        android:fontFamily="@font/roboto_bold"
+                        android:includeFontPadding="false"
+                        android:text="25-Feb-2020"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_12sp"
+                        app:fontFamily="@font/roboto_bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtOrderTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtOrderDate"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_5dp"
+                        android:layout_toStartOf="@+id/imgChat"
+                        android:fontFamily="@font/roboto_bold"
+                        android:includeFontPadding="false"
+                        android:text="7-9 PM"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_12sp"
+                        app:fontFamily="@font/roboto_bold" />
+
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/imgChat"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dimen_5dp"
+                        app:srcCompat="@drawable/ic_chat" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlAboutUser"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:id="@+id/rlUserPhoneDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v1"
+                android:padding="@dimen/dimen_10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPhone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/phone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_toStartOf="@+id/btnCall"
+                    android:layout_toEndOf="@+id/imgPhone"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="+20-115-5563-083"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    app:fontFamily="@font/roboto_bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_5dp"
+                    android:background="@drawable/orange_border_background"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:text="Call"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlUserPhoneDetail"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:id="@+id/rlUserEmailDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v2"
+                android:padding="@dimen/dimen_10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgEmail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/mail_orange" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_toStartOf="@+id/btnEmail"
+                    android:layout_toEndOf="@+id/imgEmail"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Ashraf.ahmed@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12sp"
+                    app:fontFamily="@font/roboto_bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_5dp"
+                    android:background="@drawable/orange_border_background"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:text="Email"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlUserEmailDetail"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:id="@+id/rlUserLocationDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v3"
+                android:padding="@dimen/dimen_10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgMarker"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/marker" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_toStartOf="@+id/btnNavigate"
+                    android:layout_toEndOf="@+id/imgMarker"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12sp"
+                    app:fontFamily="@font/roboto_bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNavigate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dimen_5dp"
+                    android:background="@drawable/orange_border_background"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:text="Navigate"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlUserLocationDetail"
+                android:background="@color/view_color" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v4"
+                android:padding="@dimen/dimen_10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelMessage"
+                    android:layout_marginTop="@dimen/dimen_3dp"
+                    android:layout_marginEnd="@dimen/dimen_5dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlMessage"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/lL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v8"
+                android:background="@color/very_lighter_gray"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_10dp"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Items"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    app:fontFamily="@font/roboto_bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="end"
+                    android:text="Quantity"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    app:fontFamily="@font/roboto_bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="end"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    app:fontFamily="@font/roboto_bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lL1"
+                android:background="@color/view_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPastOrderItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v9"
+                android:padding="@dimen/dimen_10dp" />
+            <View
+                android:id="@+id/v5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rvPastOrderItems"
+                android:background="@color/view_color" />
+            <RelativeLayout
+                android:id="@+id/rlSubTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v5"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginEnd="@dimen/dimen_10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    app:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Subtotal"
+                    android:textColor="@color/description"
+                    android:textSize="@dimen/text_16sp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="EGP 830"
+                    android:textColor="@color/description"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/roboto_bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDeliveryFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlSubTotal"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginEnd="@dimen/dimen_10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Delivery fee"
+                    app:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/description"
+                    android:textSize="@dimen/text_16sp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="EGP 30"
+                    android:textColor="@color/description"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/roboto_bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlDeliveryFee"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_5dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Total"
+                    app:fontFamily="@font/roboto_bold"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="EGP 860"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    app:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/roboto_bold" />
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/v6"
+                android:layout_below="@+id/rlTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:id="@+id/rlAcceptReject"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/v6"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10dp">
+
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/text_14sp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/roboto_bold"
+                        app:fontFamily="@font/roboto_bold"
+                        android:text="Order Status: Order Delivered"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+>>>>>>> d56c8e2f0b4ca020f46703d2dea49ad510a7f45a
 </RelativeLayout>

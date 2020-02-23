@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -55,4 +56,63 @@
         android:textColor="@color/black"
         android:textSize="@dimen/text_14sp"
         app:fontFamily="@font/roboto_bold" />
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Dal Makhni"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14sp"
+            android:id="@+id/txtItemName"
+            app:fontFamily="@font/roboto_bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+            android:layout_below="@+id/txtItemName"
+            android:textColor="@color/gray_clr"
+            android:textSize="@dimen/text_12sp"
+            app:fontFamily="@font/roboto_bold" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="end"
+        android:text="Qty: 3"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_14sp"
+        app:fontFamily="@font/roboto_bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="end"
+        android:text="EGP 50"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_14sp"
+        app:fontFamily="@font/roboto_bold" />
+>>>>>>> d56c8e2f0b4ca020f46703d2dea49ad510a7f45a
 </LinearLayout>

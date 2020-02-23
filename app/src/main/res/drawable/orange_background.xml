@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
@@ -6,4 +7,14 @@
         android:startColor="@color/colorPrimary" />
     <corners android:radius="5dp" />
 
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:endColor="@color/colorPrimary"
+        android:startColor="@color/colorPrimary" />
+    <corners android:radius="5dp" />
+
+>>>>>>> d56c8e2f0b4ca020f46703d2dea49ad510a7f45a
 </shape>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
@@ -11,4 +12,19 @@
         android:title="Add New Category"
         />
     
+=======
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/ic_menu_items"
+        android:title="Menu" />
+
+    <item
+        android:id="@+id/navigation_add_category"
+        android:icon="@drawable/ic_grid"
+        android:title="Add New Category"
+        />
+    
+>>>>>>> d56c8e2f0b4ca020f46703d2dea49ad510a7f45a
 </menu>
